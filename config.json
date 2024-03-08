@@ -1,0 +1,56 @@
+{
+  "database": {
+    "host": "localhost",
+    "port": null,
+    "database": "primes",
+    "username": "primes",
+    "password": "primes_password"
+  },
+  "math_handlers": {
+    "base_path": "App\\Services\\MathOperations\\Operations\\",
+    "classes": {
+      "/": "Divide",
+      "+": "Sum",
+      "-": "Subtract",
+      "*": "Multiply"
+    }
+  },
+  "output_handlers": {
+    "base_path": "App\\Services\\IOs\\Outputs\\Handlers\\",
+    "classes": {
+      "txt": "ToTxt",
+      "json": "ToJson",
+      "stdout": "ToStdout"
+    }
+  },
+  "input_handlers": {
+    "base_path": "App\\Services\\IOs\\Inputs\\Handlers\\",
+    "classes": {
+      "txt": "FromTxt",
+      "json": "FromJson"
+    }
+  },
+  "arguments": {
+    "defaults": {
+      "operation": "*",
+      "o": "stdout"
+    },
+    "mandatory": [
+      "n"
+    ],
+    "max_min_validations": {
+      "n": {
+        "min": 2,
+        "max": 3800
+      }
+    },
+    "valid_options": {
+      "help": "Prints this message",
+      "h": "Same as -help",
+      "i": "Input (If file should be placed in the same folder where the app IS EXECUTED). Supported formats are json and txt files. Optional.",
+      "o": "Output path. Supported formats are json and txt files. Optional. Default is `stdout` (monitor)",
+      "n": "Positive number of primes bigger than 2 no more than 3800. Always REQUIRED",
+      "operation": "Math operation. Optional. Default is '*' multiply. Also try / - +."
+    }
+  }
+}

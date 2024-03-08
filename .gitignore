@@ -1,0 +1,75 @@
+# IDE specific files #
+/.idea/
+/.vscode/
+
+# Composer dependencies #
+/vendor/
+
+# Common PHP artifact directories #
+/node_modules/
+/logs/
+/tmp/
+
+# Environment files #
+/.env
+/.env.local
+/.env.*.local
+
+# PHPUnit reports #
+/coverage/
+/phpunit.xml
+/phpunit.xml.dist
+
+# User-specific files #
+/.DS_Store
+/.htaccess
+
+# Cache & logs (Symfony specific) #
+/var/
+!/var/.gitkeep
+/var/cache/*
+!/var/cache/.gitkeep
+/var/log/*
+!/var/log/.gitkeep
+
+# Parameters (Symfony specific) #
+/parameters.yml
+/parameters.ini
+
+# Managed by Composer #
+/composer.lock
+/composer.phar
+
+# Session Data #
+/sessions/
+!/sessions/.gitkeep
+
+# Scss cache #
+/.sass-cache/
+
+# User-specific files #
+*.swp
+*.swo
+
+# Executable files #
+*.exe
+*.dll
+*.bat
+*.sh
+*.phar
+
+# Minified JS/CSS Files #
+*.min.js
+*.min.css
+
+# Bower Components #
+/bower_components/
+
+# Node stuff #
+/node_modules/
+npm-debug.log
+yarn-error.log
+
+# System Files #
+.DS_Store
+Thumbs.db
