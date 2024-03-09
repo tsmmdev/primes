@@ -126,7 +126,7 @@ Please ensure that your code is well-documented, and your README is informative 
 ```
 
 ## **SETUP**
-```composer install```
+```$ composer install```
 <br>
 Provide credentials for MySQL in **config.json**. Firs run of the app should create the DB table.
 <br>Some example **input files** are provided for argument testing as different inputs: _input.txt, input.json_
@@ -134,12 +134,12 @@ Provide credentials for MySQL in **config.json**. Firs run of the app should cre
 ## **TESTS**
 
 **All tests except custom**<br>
-```php vendor/phpunit/phpunit/phpunit```
+```$ php vendor/phpunit/phpunit/phpunit```
 
 **Tests by testsuite**<br>
-```php vendor/phpunit/phpunit/phpunit --testsuite integration```<br>
+```$ php vendor/phpunit/phpunit/phpunit --testsuite integration```<br>
 
-```php vendor/phpunit/phpunit/phpunit --testsuite unit```<br>
+```$ php vendor/phpunit/phpunit/phpunit --testsuite unit```<br>
 
 ```php vendor/phpunit/phpunit/phpunit --testsuite end2end```<br>
 
@@ -151,7 +151,7 @@ The provided script performs a performance test on the PrimeNumberGenerator clas
 
 ## **EXECUTION**
 
-```php app.php [arguments] ```
+```$ php app.php [arguments] ```
 
 Usage options:
 ```text
@@ -164,7 +164,7 @@ Usage options:
 ```
 
 **Example:**
-```php app.php -n=10 -operation=* -o=result.txt```
+```$ php app.php -n=10 -operation=* -o=result.txt```
 
 <br>
 
